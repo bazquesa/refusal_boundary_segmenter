@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "bazquesa-tts_jd345"
+name = "bazquesa-refusal_boundary_segmenter"
 version = "0.1.0"
 description = "把输入按语义边界切成独立单元，逐单元核对语音合成工程师·拒答边界与过度拒答相关的特征并标出命中位置"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://bazquesa.github.io"
-Repository = "https://github.com/bazquesa/tts_jd345"
-Issues = "https://github.com/bazquesa/tts_jd345/issues"
+Repository = "https://github.com/bazquesa/refusal_boundary_segmenter"
+Issues = "https://github.com/bazquesa/refusal_boundary_segmenter/issues"
 
 [project.scripts]
-tts_jd345 = "tts_jd345:main"
+refusal_boundary_segmenter = "refusal_boundary_segmenter:main"
 
 [tool.setuptools]
-py-modules = ["tts_jd345"]
+py-modules = ["refusal_boundary_segmenter"]

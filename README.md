@@ -1,11 +1,11 @@
-# tts_jd345
+# refusal_boundary_segmenter
 
 **把语音合成工程师·拒答边界与过度拒答切成可核查的片段并标出关键位置。**
 
-`tts_jd345` —— 把输入按语义边界切成独立单元，逐单元核对语音合成工程师·拒答边界与过度拒答相关的特征并标出命中位置
+`refusal_boundary_segmenter` —— 把输入按语义边界切成独立单元，逐单元核对语音合成工程师·拒答边界与过度拒答相关的特征并标出命中位置
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`tts_jd345.py` 拷走就能用
+- 单文件，`refusal_boundary_segmenter.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install bazquesa-tts_jd345
+pip install bazquesa-refusal_boundary_segmenter
 ```
 
 装完直接用命令名调用：
 
 ```bash
-tts_jd345 --help
+refusal_boundary_segmenter --help
 ```
 
-也可以不用安装，直接把 `tts_jd345.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `refusal_boundary_segmenter.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ tts_jd345 --help
 ## 用法
 
 ```bash
-python tts_jd345.py --file input.txt
-python tts_jd345.py --text "示例内容"
-python tts_jd345.py --file input.txt --json
+python refusal_boundary_segmenter.py --file input.txt
+python refusal_boundary_segmenter.py --text "示例内容"
+python refusal_boundary_segmenter.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python tts_jd345.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_tts_jd345.py
+python test_refusal_boundary_segmenter.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_tts_jd345.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/bazquesa/tts_jd345>
+- GitHub 仓库：<https://github.com/bazquesa/refusal_boundary_segmenter>
 
 ---
 
@@ -79,7 +79,7 @@ python test_tts_jd345.py
 bazquesa 做语音合成工程师·拒答边界与过度拒答相关的问题，方向对标生数科技的负责人语音合成工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://bazquesa.github.io>
-- 仓库：<https://github.com/bazquesa/tts_jd345>
+- 仓库：<https://github.com/bazquesa/refusal_boundary_segmenter>
 
 ## 许可
 
